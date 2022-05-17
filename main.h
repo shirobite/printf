@@ -19,14 +19,14 @@ int print_hex(va_list arg);
 int print_HEX(va_list arg);
 int print_STR (va_list arg);
 /**
- * struct identify - structure definition of a printTypeStruct
+ * struct identifierStruct - structure definition of a printTypeStruct
  * @indentifier: type
  * @printer: function to print
  */
-typedef struct identify
+typedef struct identifierStruct
 {
 char *indentifier;
 int (*printer)(va_list);
-} identify;
+} identifierStruct;
 
 #endif
